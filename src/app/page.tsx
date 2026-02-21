@@ -4,9 +4,9 @@
 import { useEffect, useState } from "react";
 import { PORTFOLIO_DATA } from "@/data";
 import { useTheme } from "next-themes";
-import { Moon, Sun, Github, Mail, Linkedin, ExternalLink, Download } from "lucide-react";
+import { Moon, Sun, Github, Mail, Linkedin, ExternalLink, Download } from "lucide-react"; //แหล่งไอคอนจาก lucide-react
 import { motion } from "framer-motion";
-import Image from "next/image"; // 👈 เพิ่มบรรทัดนี้ใต้ import ของ framer-motion ก็ได้ครับ
+import Image from "next/image";
 
 // Types สำหรับ GitHub API
 interface Repo {
@@ -81,7 +81,7 @@ export default function Portfolio() {
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">{PORTFOLIO_DATA.name}</h2>
           <h3 className="text-xl text-zinc-500 dark:text-zinc-400 mb-6">{PORTFOLIO_DATA.role}</h3>
-          <p className="text-lg leading-relaxed max-w-2xl text-zinc-700 dark:text-zinc-300 mb-8 mx-auto md:mx-0">
+          <p className="text-lg leading-relaxed max-w-2xl text-zinc-700 dark:text-zinc-300 mb-8 mx-auto md:mx-0 whitespace-pre-line">
             {PORTFOLIO_DATA.bio}
           </p>
 
@@ -160,7 +160,7 @@ export default function Portfolio() {
         className="mb-10 bg-zinc-100 dark:bg-zinc-800/80 p-8 rounded-3xl"
       >
         <h4 className="text-2xl font-semibold mb-2">Let's Connect</h4>
-        <p className="text-zinc-600 dark:text-zinc-400 mb-6 text-sm">กำลังมองหานักพัฒนาเว็บมาร่วมทีม? ส่งข้อความหาผมได้เลยครับ</p>
+        <p className="text-zinc-600 dark:text-zinc-400 mb-6 text-sm">กำลังหาเด็กฝึกงานทำเว็บ ส่งข้อความหาผมได้เลยครับ ขอบคุณครับ🙏</p>
 
         <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
           <input type="text" placeholder="ชื่อของคุณ" className="p-3 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:focus:ring-amber-400" />

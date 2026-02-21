@@ -18,7 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="th" suppressHydrationWarning>
-      {/* โทนสีใหม่: Dark Mode ใช้ Zinc-900 ซึ่งเป็นเทาเข้มที่ดูอบอุ่นกว่าดำสนิท */}
       <body className={`${inter.className} bg-[#FAFAFA] text-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 transition-colors duration-300`}>
         <Providers>
           {children}
