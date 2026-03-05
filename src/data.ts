@@ -7,7 +7,7 @@ export const PORTFOLIO_DATA = {
     contact: {
         email: "tanpawinttp@gmail.com",
         github: "https://github.com/tanpawin",
-        linkedin: "https://www.linkedin.com/in/pawin-thitipong-7ab3843b2", // อย่าลืมเอาลิงก์ LinkedIn มาใส่
+        linkedin: "https://www.linkedin.com/in/pawin-thitipong-7ab3843b2",
     },
     skills: [
         "HTML",
@@ -22,7 +22,7 @@ export const PORTFOLIO_DATA = {
         "Figma"
     ],
 
-    // เพิ่มผลงานที่คุณภูมิใจเป็นพิเศษ (นอกเหนือจากที่ดึงจาก GitHub)
+    // เพิ่มผลงานที่คุณภูมิใจเป็นพิเศษ
     featuredProjects: [
         {
             id: "manual-1",

@@ -29,7 +29,6 @@ export default function Portfolio() {
     setMounted(true);
     const fetchRepos = async () => {
       try {
-        // เปลี่ยน 'yourusername' เป็น GitHub Username ของคุณ
         const res = await fetch("https://api.github.com/users/tanpawin/repos?sort=updated&per_page=6");
         const data = await res.json();
         if (Array.isArray(data)) setGithubRepos(data);
@@ -40,7 +39,7 @@ export default function Portfolio() {
     fetchRepos();
   }, []);
 
-  // รวมผลงานที่พิมพ์เองกับผลงานจาก GitHub
+  // รวมผลงานจาก GitHub
   const allProjects = [...PORTFOLIO_DATA.featuredProjects, ...githubRepos].slice(0, 6);
 
   if (!mounted) return null; // ป้องกัน Hydration Mismatch สำหรับ next-themes
@@ -133,7 +132,7 @@ export default function Portfolio() {
               <div>
                 <h5 className="font-semibold text-lg mb-2 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition">{repo.name}</h5>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4 line-clamp-3">
-                  {repo.description || "ไม่มีคำอธิบายใน GitHub"}
+                  {repo.description || "GitHub ของPortfolioนี้ครับ"}
                 </p>
                 {repo.techStack && (
                   <div className="flex flex-wrap gap-2 mb-4">
