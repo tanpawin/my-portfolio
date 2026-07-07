@@ -13,16 +13,14 @@ export const PORTFOLIO_DATA = {
         "HTML",
         "CSS",
         "JavaScript",
-        "Vue",
         "React",
         "Next.js",
-        "PHP",
         "MySQL",
         "Apache",
         "Figma"
     ],
 
-    // เพิ่มผลงานที่คุณภูมิใจเป็นพิเศษ
+    // เพิ่มผลงานที่นี่
     featuredProjects: [
         {
             id: "manual-1",
@@ -30,7 +28,7 @@ export const PORTFOLIO_DATA = {
             description: "โปรเจกต์พัฒนาเว็บแอปพลิเคชันด้วยระบบฐานข้อมูล ",
             techStack: ["PHP", "MySQL", "JavaScript", "HTML/CSS"],
             html_url: "https://github.com/tanpawin/your-repo-name", // ใส่ลิงก์ Repo
-            homepage: "", // ลิงก์เว็บจริง (ถ้ามี)
+            homepage: "", // ลิงก์เว็บ (ถ้ามี)
         },
     ]
 }
