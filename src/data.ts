@@ -12,7 +12,9 @@ export const PORTFOLIO_DATA = {
     skills: [
         "HTML",
         "CSS",
+        "Tailwind CSS",
         "JavaScript",
+        "TypeScript",
         "React",
         "Next.js",
         "MySQL",
@@ -24,9 +26,9 @@ export const PORTFOLIO_DATA = {
     featuredProjects: [
         {
             id: "manual-1",
-            name: "Full-Stack Web Application",
+            name: "Full-Stack Web Application (📌Dummy Test ไม่ใช่โปรเจกต์จริง)",
             description: "โปรเจกต์พัฒนาเว็บแอปพลิเคชันด้วยระบบฐานข้อมูล ",
-            techStack: ["PHP", "MySQL", "JavaScript", "HTML/CSS"],
+            techStack: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
             html_url: "https://github.com/tanpawin/your-repo-name", // ใส่ลิงก์ Repo
             homepage: "", // ลิงก์เว็บ (ถ้ามี)
         },

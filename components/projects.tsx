@@ -19,6 +19,21 @@ interface ProjectsProps {
   projects: ProjectType[];
 }
 
+const topicDisplay: Record<string, string> = {
+  nextjs: "Next.js",
+  typescript: "TypeScript",
+  javascript: "JavaScript",
+  react: "React",
+  tailwindcss: "Tailwind CSS",
+  nodejs: "Node.js",
+  express: "Express.js",
+  mysql: "MySQL",
+  mongodb: "MongoDB",
+  php: "PHP",
+  html: "HTML",
+  css: "CSS",
+};
+
 export default function Projects({ projects }: ProjectsProps) {
   return (
     <motion.section
@@ -27,7 +42,7 @@ export default function Projects({ projects }: ProjectsProps) {
       viewport={{ once: true }}
       className="mb-20"
     >
-      <h4 className="text-2xl font-semibold mb-6">Selected Projects</h4>
+      <h4 className="text-2xl font-semibold mb-6">My Projects</h4>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((repo: ProjectType) => (
           <div
@@ -41,14 +56,14 @@ export default function Projects({ projects }: ProjectsProps) {
               <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4 line-clamp-3">
                 {repo.description || "GitHub ของPortfolioนี้ครับ"}
               </p>
-              {repo.techStack && (
+              {(repo.techStack ?? repo.topics) && (
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {repo.techStack.map((tech: string) => (
+                  {(repo.techStack ?? repo.topics)?.map((tech) => (
                     <span
                       key={tech}
                       className="text-xs px-2 py-1 bg-zinc-100 dark:bg-zinc-700/50 rounded-md"
                     >
-                      {tech}
+                       {topicDisplay[tech] ?? tech}
                     </span>
                   ))}
                 </div>
