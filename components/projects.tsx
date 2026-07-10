@@ -53,6 +53,11 @@ export default function Projects({ projects }: ProjectsProps) {
               <h5 className="font-semibold text-lg mb-2 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition">
                 {repo.name}
               </h5>
+              {repo.name === "my-portfolio" && (
+                <p className="mb-3 text-sm font-medium text-amber-600 dark:text-amber-400">
+                  ⭐ กำลังชมโปรเจกต์นี้อยู่
+                </p>
+              )}
               <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4 line-clamp-3">
                 {repo.description || "GitHub ของPortfolioนี้ครับ"}
               </p>
@@ -63,7 +68,7 @@ export default function Projects({ projects }: ProjectsProps) {
                       key={tech}
                       className="text-xs px-2 py-1 bg-zinc-100 dark:bg-zinc-700/50 rounded-md"
                     >
-                       {topicDisplay[tech] ?? tech}
+                      {topicDisplay[tech] ?? tech}
                     </span>
                   ))}
                 </div>
