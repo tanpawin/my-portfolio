@@ -23,7 +23,7 @@ export const PORTFOLIO_DATA = {
     ],
 
     // เพิ่มผลงานที่นี่
-    featuredProjects: [
+    /* featuredProjects: [
         {
             id: "manual-1",
             name: "Full-Stack Web Application (📌Dummy Test ไม่ใช่โปรเจกต์จริง)",
@@ -32,5 +32,5 @@ export const PORTFOLIO_DATA = {
             html_url: "https://github.com/tanpawin/your-repo-name", // ใส่ลิงก์ Repo
             homepage: "", // ลิงก์เว็บ (ถ้ามี)
         },
-    ]
+    ] */
 }

@@ -1,11 +1,13 @@
 // src/app/layout.tsx
 import './globals.css'
 import type { Metadata } from 'next'
-// 1. เปลี่ยนจาก Inter เป็น Kanit (หรือฟอนต์ไทยอื่นๆ ที่ชอบ)
-import { Kanit } from 'next/font/google' 
+import { Kanit, Geist } from 'next/font/google' 
 import { Providers } from './providers'
+import { cn } from "@/lib/utils";
+import ClickSparkWrapper from '@/components/effects/ClickSparkWrapper';
 
-// 2. ตั้งค่าฟอนต์ Kanit ให้รองรับทั้งภาษาไทย (thai) และอังกฤษ (latin)
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
 const kanit = Kanit({ 
   weight: ['300', '400', '500', '600', '700'],
   subsets: ['thai', 'latin'],
@@ -23,11 +25,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="th" suppressHydrationWarning>
-      {/* 3. เปลี่ยนจาก inter.className เป็น kanit.className */}
+    <html lang="th" suppressHydrationWarning className={cn("font-sans", geist.variable)}>
       <body className={`${kanit.className} bg-[#FAFAFA] text-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 transition-colors duration-300`}>
         <Providers>
+          <ClickSparkWrapper>
           {children}
+          </ClickSparkWrapper>
         </Providers>
       </body>
     </html>

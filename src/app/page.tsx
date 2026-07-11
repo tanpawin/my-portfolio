@@ -4,11 +4,11 @@
 import { useEffect, useState } from "react";
 import { PORTFOLIO_DATA } from "@/data";
 import { useTheme } from "next-themes";
-import Navbar from "../../components/navbar";
-import About from "../../components/about";
-import Skill from "../../components/skill";
+import Navbar from "../components/sections/navbar";
+import About from "../components/sections/about";
+import Skill from "../components/sections/skill";
 // นำเข้า Projects component และ ProjectType
-import Projects, { ProjectType } from "../../components/projects";
+import Projects, { ProjectType } from "../components/sections/projects";
 
 export default function Portfolio() {
   const { theme, setTheme, resolvedTheme } = useTheme();
@@ -37,7 +37,7 @@ export default function Portfolio() {
 
   // ใช้ type เป็น ProjectType ให้สอดคล้องกัน
   const allProjects: ProjectType[] = [
-    ...PORTFOLIO_DATA.featuredProjects,
+   /*  ...PORTFOLIO_DATA.featuredProjects, */
     ...githubRepos,
   ].slice(0, 6);
 
