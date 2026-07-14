@@ -8,8 +8,11 @@ import Navbar from "../components/sections/navbar";
 import About from "../components/sections/about";
 import Education from "../components/sections/education";
 import Skill from "../components/sections/skill";
+import Contact from "../components/sections/contact";
+import Footer from "@/components/sections/footer";
 // นำเข้า Projects component และ ProjectType
 import Projects, { ProjectType } from "../components/sections/projects";
+
 
 export default function Portfolio() {
   const { theme, setTheme, resolvedTheme } = useTheme();
@@ -38,7 +41,7 @@ export default function Portfolio() {
 
   // ใช้ type เป็น ProjectType ให้สอดคล้องกัน
   const allProjects: ProjectType[] = [
-   /*  ...PORTFOLIO_DATA.featuredProjects, */
+    /*  ...PORTFOLIO_DATA.featuredProjects, */
     ...githubRepos,
   ].slice(0, 6);
 
@@ -51,6 +54,8 @@ export default function Portfolio() {
       <Education />
       <Skill />
       <Projects projects={allProjects} />
+      <Contact />
+      <Footer />
     </div>
   );
 }

@@ -8,6 +8,7 @@ export const PORTFOLIO_DATA = {
         email: "tanpawinttp@gmail.com",
         github: "https://github.com/tanpawin",
         linkedin: "https://www.linkedin.com/in/pawin-thitipong-7ab3843b2",
+        phone: "093-938-7831",
     },
     education: [
         {
@@ -30,7 +31,7 @@ export const PORTFOLIO_DATA = {
         },
         {
             name: "Tools & Design",
-            skills: ["Apache", "Figma"],
+            skills: ["Clerk","Figma","GitHub","VS Code","XAMPP","Vercel"],
         },
     ],
 
