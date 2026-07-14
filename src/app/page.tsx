@@ -6,6 +6,7 @@ import { PORTFOLIO_DATA } from "@/data";
 import { useTheme } from "next-themes";
 import Navbar from "../components/sections/navbar";
 import About from "../components/sections/about";
+import Education from "../components/sections/education";
 import Skill from "../components/sections/skill";
 // นำเข้า Projects component และ ProjectType
 import Projects, { ProjectType } from "../components/sections/projects";
@@ -47,6 +48,7 @@ export default function Portfolio() {
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
       <Navbar />
       <About />
+      <Education />
       <Skill />
       <Projects projects={allProjects} />
     </div>

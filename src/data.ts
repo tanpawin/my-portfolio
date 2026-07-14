@@ -1,25 +1,37 @@
 // src/data.ts
 export const PORTFOLIO_DATA = {
     name: "ภวินท์ ฐิติพงศ์",
-    role: "Web Developer / Frontend Developer",
+    role: "UX/UI Designer & Frontend Developer",
     profileImage: "/profile.jpg",
-    bio: "สวัสดีครับ แทนครับ ผมกำลังศึกษาอยู่สาขาวิทยาการคอมพิวเตอร์ปี4 \n มีความสนใจในด้าน Web Development และ Frontend ครับ",
+    bio: "สวัสดีครับ แทนครับ ผมกำลังศึกษาอยู่สาขาวิทยาการคอมพิวเตอร์ปี4 \n มีความสนใจในด้าน UX/UI Designer และ Frontend Developer ครับ",
     contact: {
         email: "tanpawinttp@gmail.com",
         github: "https://github.com/tanpawin",
         linkedin: "https://www.linkedin.com/in/pawin-thitipong-7ab3843b2",
     },
-    skills: [
-        "HTML",
-        "CSS",
-        "Tailwind CSS",
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Next.js",
-        "MySQL",
-        "Apache",
-        "Figma"
+    education: [
+        {
+            school: "มหาวิทยาลัยราชภัฏพระนคร",
+            abbr: "PNRU",
+            major: "คณะวิทยาศาสตร์และเทคโนโลยี",
+            degree: "สาขาวิทยาการคอมพิวเตอร์",
+            period: "2023 - ปัจจุบัน",
+            gpa: "3.52",
+        },
+    ],
+    skillCategories: [
+        {
+            name: "Frontend",
+            skills: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "TypeScript", "React", "Next.js"],
+        },
+        {
+            name: "Database",
+            skills: ["MySQL"],
+        },
+        {
+            name: "Tools & Design",
+            skills: ["Apache", "Figma"],
+        },
     ],
 
     // เพิ่มผลงานที่นี่
