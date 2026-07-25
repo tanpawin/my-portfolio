@@ -1,11 +1,11 @@
 // src/data.ts
 export const PORTFOLIO_DATA = {
     name: "ภวินท์ ฐิติพงศ์",
-    role: "UX/UI Designer & Frontend Developer",
+    role: "Web Application Developer",
     profileImage: "/profile.jpg",
     bio: "สวัสดีครับ แทนครับ ผมกำลังศึกษาอยู่สาขาวิทยาการคอมพิวเตอร์ปี4 \n มีความสนใจในด้าน UX/UI Designer และ Frontend Developer ครับ",
     contact: {
-        email: "tanpawinttp@gmail.com",
+        email: "pawin.thitipong@gmail.com",
         github: "https://github.com/tanpawin",
         linkedin: "https://www.linkedin.com/in/pawin-thitipong-7ab3843b2",
         phone: "093-938-7831",
@@ -26,12 +26,16 @@ export const PORTFOLIO_DATA = {
             skills: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "TypeScript", "React", "Next.js"],
         },
         {
+            name: "Backend & ORM",
+            skills: ["Supabase", "Prisma"],
+        },
+        {
             name: "Database",
-            skills: ["MySQL"],
+            skills: ["MySQL","PostgreSQL"],
         },
         {
             name: "Tools & Design",
-            skills: ["Clerk","Figma","GitHub","VS Code","XAMPP","Vercel"],
+            skills: ["Clerk", "Figma", "GitHub", "VS Code", "XAMPP", "Vercel"],
         },
     ],
 
