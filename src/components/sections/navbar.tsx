@@ -18,7 +18,7 @@ const Navbar = () => {
             {resolvedTheme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
           </button>
           <a
-            href="/resume.pdf" // วางไฟล์ resume.pdf ไว้ในโฟลเดอร์ public
+            href="/Pawin Resume.pdf" // วางไฟล์ resume.pdf ไว้ในโฟลเดอร์ public
             download
             className="flex items-center gap-2 bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-4 py-2 rounded-full text-sm font-medium hover:opacity-80 transition"
           >
