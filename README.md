@@ -149,11 +149,11 @@ https://github.com/tanpawin
 
 Portfolio
 
-https://your-portfolio.vercel.app
+https://my-portfolio-ten-dun-57.vercel.app/
 
 LinkedIn
 
-https://linkedin.com/in/your-profile
+https://www.linkedin.com/in/pawin-thitipong-7ab3843b2
 
 ---
 
