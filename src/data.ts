@@ -3,7 +3,7 @@ export const PORTFOLIO_DATA = {
   name: "ภวินท์ ฐิติพงศ์",
   role: "Web Application Developer",
   profileImage: "/profile.jpg",
-  bio: "สวัสดีครับ แทนครับ ผมกำลังศึกษาอยู่สาขาวิทยาการคอมพิวเตอร์ปี4 \n มีความสนใจในด้าน UX/UI Designer และ Frontend Developer ครับ",
+  bio: "สวัสดีครับ แทนครับ ผมกำลังศึกษาอยู่สาขาวิทยาการคอมพิวเตอร์ปี4 \n มีความสนใจในด้าน Software Tester และ Frontend Developer ครับ",
   contact: {
     email: "pawin.thitipong@gmail.com",
     github: "https://github.com/tanpawin",
