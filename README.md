@@ -9,7 +9,8 @@ A modern and responsive portfolio website built with **Next.js**, **React**, and
 ## 📸 Preview
 
 ### About Section
-<img width="987" height="430" alt="image" src="https://github.com/user-attachments/assets/1d6ccecf-6e95-4a47-bb32-76073f4b2826" />
+<img width="998" height="453" alt="image" src="https://github.com/user-attachments/assets/b1656ee4-c793-4d78-9af7-c98d79d52d10" />
+
 
 ---
 ### Education Section
@@ -154,9 +155,3 @@ https://my-portfolio-ten-dun-57.vercel.app/
 LinkedIn
 
 https://www.linkedin.com/in/pawin-thitipong-7ab3843b2
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
