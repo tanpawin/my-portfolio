@@ -9,7 +9,8 @@ A modern and responsive portfolio website built with **Next.js**, **React**, and
 ## 📸 Preview
 
 ### About Section
-<img width="998" height="453" alt="image" src="https://github.com/user-attachments/assets/b1656ee4-c793-4d78-9af7-c98d79d52d10" />
+<img width="1052" height="461" alt="image" src="https://github.com/user-attachments/assets/6b38fbf4-5d62-4aee-8ff9-e8eccf57964a" />
+
 
 
 ---
